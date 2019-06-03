@@ -1,0 +1,151 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#version 1.0
+#RecodeBosque
+#Banyakyangsalah:v
+
+garisbawah='\033[4m'
+hitam='\033[0;30m'
+merahtua='\033[0;31m'
+hijautua='\033[0;32m'
+coklat='\033[0;33m'
+birutua='\033[0;34m'
+ungutua='\033[0;35m'
+cyan='\033[0;36m'
+abuabumuda='\033[0;37m'
+abuabutua='\033[1;30m'
+merahmuda='\033[1;31m'
+hijaumuda='\033[1;32m'
+kuning='\033[1;33m'
+birumuda='\033[1;34m'
+ungumuda='\033[1;35m'
+lightcyan='\033[1;36m'
+putih='\033[1;37m'
+nocolor='\033[0m'
+
+ctrl_c(){
+clear
+echo ${merahmuda}"[#]> (Ctrl + C ) Detected, Trying To Exit … "
+echo ${lightcyan}"[#]> Thanks"
+sleep 1
+echo
+echo ${putih}"[#]> See You ...."
+sleep 1
+exit
+}
+
+figlet -f small Tools | lolcat
+echo " Tools Hacking" | lolcat
+echo ${lightcyan} "Tools By Dosyah_09"
+echo ${hijaumuda} "Whatsapp  : 082365706861"
+
+echo
+echo ${birumuda} "1. Nmap" ${nocolor}
+echo "============================" | lolcat
+echo ${merahmuda} "2. Admin Finder" ${nocolor}
+echo "============================" | lolcat
+echo ${abuabutua} "3. RED HAWK" ${nocolor}
+echo "============================" | lolcat
+echo ${lightcyan} "4. Lazymux"
+echo "============================" | lolcat
+echo ${kuning} "5. Tools-X" ${nocolor}
+echo "============================" | lolcat
+echo ${ungumuda} "6. Keluar" ${nocolor}
+echo
+echo ${hijaumuda} "╭>MC"
+read -p " ╰─#" pil;
+
+#Nmap
+
+if [ $pil = 1 ] || [ $pil = 1 ]
+then
+clear
+pkg install nmap
+clear
+sleep 1.6
+toilet -f small --gay Nmap
+echo ${birumuda}"{1} Masukkan Webnya : " ${nocolor}
+read web
+
+nmap $web
+echo
+fi
+
+# admin-finder
+
+if [ $pil = 2 ] || [ $pil = 2 ]
+then
+cd /data/data/com.termux/files/home
+git clone https://github.com/the-c0d3r/admin-finder.git
+clear
+toilet -f small --gay Admin
+toilet -f small --gay Login
+toilet -f small --gay Finder
+sleep 1
+echo ${hijaumuda}"Cara menggunakan admin finder"
+echo ${kuning} "cd admin-finder"
+echo ${merahtua} "python admin-finder.py"
+cd /data/data/com.termux/files/home/admin-finder
+python admin-finder.py
+fi
+
+#RED HAWK
+
+if [ $pil = 3 ] || [ $pil = 3 ]
+then
+cd /data/data/com.termux/files/home
+sleep 1
+git clone https://github.com/Tuhinshubhra/RED_HAWK
+clear
+toilet -f small --gay RED HAWK
+sleep 1.2
+echo ${hijaumuda} "Installer RED_HAWK…"
+echo ${ungumuda} "cd RED_HAWK"
+echo ${birumuda} "php RED_HAWK.php"
+cd /data/data/com.termux/files/home/RED_HAWK
+php rhawk.php
+fi
+
+#Lazymux
+
+if [ $pil = 4 ] || [ $pil = 4 ]
+then
+cd /data/data/com.termux/files/home
+sleep 0.6
+git clone https://github.com/Gameye98/Lazymux
+clear
+toilet -f small --gay Lazymux
+sleep 1
+echo ${abuabumuda} "Installer Lazymux…"
+echo ${merahmuda} "cd Lazymux"
+echo ${hijaumuda} "python lazymux.py"
+cd /data/data/com.termux/files/home/Lazymux
+python2 lazymux.py
+fi
+
+#Tools-X
+
+if [ $pil = 5 ] || [ $pil = 5 ]
+then
+cd /data/data/com.termux/files/home
+clear
+git clone https://github.com/Rajkumrdusad/Tool-X
+clear
+toilet -f small --gay Tool-X
+sleep 1
+echo ${lightcyan} "Installer Tool-X…"
+echo ${putih} "cd Tool-X"
+echo ${kuning} "bash install.aex"
+cd /data/data/com.termux/files/home/Tool-X
+bash install.aex
+fi
+
+#keluar
+
+if [ $pil = 6 ] || [ $pil = 6 ]
+then
+sleep 0.7
+echo "Created by : Dosyah_09" | lolcat
+sleep 2
+echo "Edited By 31212012SAFE" | lolcat
+fi
+exit
